@@ -1,6 +1,10 @@
 # nginx-auth
 
-##Installing openresty on osx pitfalls
+##Installing openresty
+
+http://openresty.org/#Installation
+
+OSX pitfalls:
 
 Don't forget opensll and pcre location (installed by homebrew)
 ```
