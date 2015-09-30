@@ -302,13 +302,12 @@ local timestamp = ""
 
 if query_args ~= nil then
  
-  local apikey = query_args["apikey"]
+  local apiKey = query_args["apiKey"]
+  if apiKey ~= nil then 
 
-  if apikey ~= nil then 
-
-    local divider = apikey:find(":")
-    hmac = apikey:sub(divider+1)
-    timestamp = apikey:sub(0, divider-1)
+    local divider = apiKey:find(":")
+    hmac = apiKey:sub(divider+1)
+    timestamp = apiKey:sub(0, divider-1)
 
     local hmachex = sha1.hmac("sugarbears", timestamp)
     if hmachex  == hmac and tonumber(timestamp) >= os.time() then
@@ -318,4 +317,4 @@ if query_args ~= nil then
 
 end
 
-ngx.say("Please provide a valid apikey")
+ngx.say("Please provide a valid apiKey")
