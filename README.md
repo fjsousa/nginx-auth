@@ -17,4 +17,6 @@ Just follow this guidelines
 
 http://openresty.org/#UsingLuaRocks
 
-You have to remember to use the luarocks bin under openresty (instructions on the link).
+You have to remember to use the luarocks bin under openresty (instructions on the link). Usually
+
+`/usr/local/openresty/luajit/luarocks install sha1`
