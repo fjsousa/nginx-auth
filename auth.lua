@@ -22,4 +22,5 @@ if query_args ~= nil then
 
 end
 
+ngx.status = 401
 ngx.say("Please provide a valid apiKey")
