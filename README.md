@@ -1,5 +1,11 @@
 # nginx-auth
 
+##tests
+
+You need to have the command `resty` configure
+```
+./tests.sh
+```
 ##Installing openresty
 
 http://openresty.org/#Installation
