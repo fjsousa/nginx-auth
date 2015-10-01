@@ -1,5 +1,12 @@
 # nginx-auth
 
+##running 
+Assuming you have nginx running:
+
+```
+sudo nginx -p `pwd`/ -s reload
+```
+
 ##tests
 
 You need to have the command `resty` configure
