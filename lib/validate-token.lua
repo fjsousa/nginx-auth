@@ -2,7 +2,7 @@ local sha1 = require 'sha1'
 local secret = "sugarbears"
 local base64 = require 'base64'
 
-function validToken(apiKeybase64) 
+function validToken(apiKeybase64)
   if apiKeybase64 ~= nil then
     local apiKey = base64.decode(apiKeybase64)
 

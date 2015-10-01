@@ -3,7 +3,7 @@ local base64 = require 'base64'
 local query_args = ngx.req.get_uri_args()
 local hmac = ""
 local timestamp = ""
-local validateToken = require 'validate-token'
+local validateToken = require 'lib/validate-token'
 
 if query_args ~= nil then
  

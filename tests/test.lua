@@ -1,4 +1,4 @@
-local validateToken = require 'validate-token'
+local validateToken = require '/lib/validate-token'
 local base64 = require 'base64'
 local sha1 = require 'sha1'
 local secret = 'sugarbears'
@@ -20,3 +20,5 @@ assert(validateToken(invalidToken) == false, 'Invalid token should return false'
 
 local invalidToken2 = "sdfsdfsdfsdfsd:asdasdasasdas"
 assert(validateToken(invalidToken2) == false, 'Invalid token 2 should return false')
+
+print('tests ok')
