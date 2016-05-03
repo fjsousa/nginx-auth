@@ -6,7 +6,12 @@ Assuming you have nginx running:
 ```
 sudo nginx -p `pwd`/ -s reload
 ```
+##install dependencies 
 
+```
+./install.sh
+
+```
 ##tests
 
 You need to have the command `resty` configure
